@@ -32,7 +32,7 @@ usage: Dl3_Vanilla_Seq2Seq.py
       ```
       !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Vanilla_Seq2Seq.py"
       ```
-- This will run code for default parameters:
+- This will run code for some default parameters. To generate the best result refer the below configuration:
  ```
  sweep_config= {
     'parameters' : {
@@ -81,5 +81,22 @@ usage: Dl3_Attn_Seq2Seq.py
       ```
       !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Attn_Seq2Seq.py" 
       ```
-- This will run code for default parameters. 
+- This will run code for some default parameters. To generate the best result refer the below configuration:
+```
+sweep_config= {
+    'parameters' : {
+        'cell_type' : { 'values' : ['lstm'] },
+        'dropout' : { 'values' : [0.2]},
+        'embedding_size' : {'values' : [256]},
+        'num_layers' : {'values' : [1]},
+        'batch_size' : {'values' : [32]},
+        'hidden_size' : {'values' : [512]},
+        'bidirectional' : {'values' : [False]},
+        'learning_rate':{"values": [0.001]},
+        'optim':{"values": ['nadam']},
+       'teacher_forcing':{"values":[0.1]}
+    }
+}
+
+``` 
  
