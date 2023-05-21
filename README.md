@@ -30,7 +30,8 @@ usage: Dl3_Vanilla_Seq2Seq.py
      ```
      - After loading the dataset and mounting the .py file in colab run:
       ```
-      !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Vanilla_Seq2Seq.py" ```
+      !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Vanilla_Seq2Seq.py"
+      ```
 - This will run code for default parameters:
  ```
  sweep_config= {
@@ -78,6 +79,7 @@ usage: Dl3_Attn_Seq2Seq.py
      ```
      - After loading the dataset and mounting the .py file in colab run:
       ```
-      !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Attn_Seq2Seq.py" ```
+      !python3 "/content/drive/My Drive/Colab Notebooks/Dl3_Attn_Seq2Seq.py" 
+      ```
 - This will run code for default parameters. 
  
